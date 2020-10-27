@@ -60,5 +60,10 @@ CREATE TABLE bookings(
 
 INSERT INTO users
 VALUES('', '', '', '');
+
+
+INSERT INTO bookings
+VALUES(u_id, e_id, GETDATE(), 00.00);
+-- use GETDATE() for current date(time)
 ```
 
