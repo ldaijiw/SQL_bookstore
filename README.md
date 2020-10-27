@@ -34,9 +34,10 @@ USE booksareus_db;
 -- create tables
 CREATE TABLE users(
 	user_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-	name VARCHAR(20) NOT NULL,
-	email VARCHAR(30) NOT NULL,
-	phone_number VARCHAR(13) NOT NULL
+	user_firstname VARCHAR(255) NOT NULL,
+	user_lastname VARCHAR(255) NOT NULL,	
+	user_email VARCHAR(255) NOT NULL,
+	user_number VARCHAR(13) NOT NULL
 );
 
 CREATE TABLE ebooks(
@@ -54,5 +55,10 @@ CREATE TABLE bookings(
 	booking_date DATE NOT NULL,
 	price DECIMAL(5,2) NOT NULL
 );
+
+-- inserting data
+
+INSERT INTO users
+VALUES('', '', '', '');
 ```
 
